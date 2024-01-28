@@ -1,22 +1,17 @@
-package com.fin.zerodha;
-
-import java.util.List;
+package com.fin.zerodha.dividend;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.fin.zerodha.utils.Holdings;
-
 @RestController
-@RequestMapping("/zerodha")
-public class HoldingsController {
+@RequestMapping("/zerodha/dividend")
+public class DividendController {
 	
 	@Autowired
-	private HoldingsService holdingService;
+	private DividendService holdingService;
 
+/*
 	@GetMapping("/holdings/all")
 	public List<String> getHoldings() {
 		return holdingService.getHoldings();
@@ -31,5 +26,6 @@ public class HoldingsController {
 	public List<Holdings> getAllHoldings() {
 		return holdingService.getAllHoldings();
 	}
+*/
 
 }
